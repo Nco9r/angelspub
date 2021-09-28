@@ -46,7 +46,7 @@ export default {
     top: 0;
   }
   to {
-    top: -100%;
+    top: -150%;
   }
 }
 
