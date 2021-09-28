@@ -138,7 +138,7 @@ to{
   animation: appear .7s;
   animation-fill-mode: forwards;
   animation-delay: 1.7s;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: .5px;
   line-height: 24px;
 }
