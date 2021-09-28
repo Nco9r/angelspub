@@ -20,7 +20,7 @@ export default {
     position: fixed;
     z-index: 999999;
     background-position: 100%;
-    background-image: url('~assets/img/png/noise_3.png');
+    background-image: url('~assets/img/png/noise.png');
     opacity: .3;
     pointer-events: none;
     animation: NeigeGenerate 2s steps(2) infinite;  
