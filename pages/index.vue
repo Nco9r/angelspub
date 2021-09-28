@@ -81,7 +81,7 @@ margin-left: -20px;
 
 @media screen and (min-width: 1200px) {
   .layout {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 30px auto;
   }
 }
