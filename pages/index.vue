@@ -88,14 +88,14 @@ margin-left: -20px;
 
 @media screen and (min-width: 1440px) {
   .layout {
-    max-width: 1440px;
+    max-width: 1400px;
     margin: 30px auto;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .layout {
-    max-width: 1600px;
+    max-width: 1550px;
     margin: 30px auto;
   }
 }
