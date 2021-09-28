@@ -1,7 +1,7 @@
-export const DefaultNoise = () => import('../../components/Default/Noise.vue' /* webpackChunkName: "components/default-noise" */).then(c => wrapFunctional(c.default || c))
-export const FeaturesHero = () => import('../../components/Features/Hero.vue' /* webpackChunkName: "components/features-hero" */).then(c => wrapFunctional(c.default || c))
-export const FeaturesLogo = () => import('../../components/Features/Logo.vue' /* webpackChunkName: "components/features-logo" */).then(c => wrapFunctional(c.default || c))
-export const FeaturesThefooter = () => import('../../components/Features/Thefooter.vue' /* webpackChunkName: "components/features-thefooter" */).then(c => wrapFunctional(c.default || c))
+export { default as DefaultNoise } from '../../components/Default/Noise.vue'
+export { default as FeaturesHero } from '../../components/Features/Hero.vue'
+export { default as FeaturesLogo } from '../../components/Features/Logo.vue'
+export { default as FeaturesThefooter } from '../../components/Features/Thefooter.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

@@ -67,7 +67,7 @@ export default {
         submit(e) {
       e.preventDefault()
       this.$axios
-        .post('https://angels-pub.fr/api/subscribe', { ...this.form })
+        .post('https://api.angels-pub.fr/subscribe', { ...this.form })
         .then(
           (res) => (
             (this.form = '')
