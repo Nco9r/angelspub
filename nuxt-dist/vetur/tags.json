@@ -1,0 +1,14 @@
+{
+  "DefaultNoise": {
+    "description": "Auto imported from components/Default/Noise.vue"
+  },
+  "FeaturesHero": {
+    "description": "Auto imported from components/Features/Hero.vue"
+  },
+  "FeaturesLogo": {
+    "description": "Auto imported from components/Features/Logo.vue"
+  },
+  "FeaturesThefooter": {
+    "description": "Auto imported from components/Features/Thefooter.vue"
+  }
+}
