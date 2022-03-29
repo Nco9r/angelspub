@@ -187,6 +187,7 @@ export default {
   background-color: var(--red);
   border: none;
   width: 40px;
+  height: 40px;
   margin: 0 5px;
   border-radius: 4px;
 }
@@ -196,6 +197,7 @@ export default {
   border: none;
   margin: 0 5px;
   width: 40px;
+  height: 40px;
   border-radius: 4px;
 }
 
