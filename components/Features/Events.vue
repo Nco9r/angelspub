@@ -49,6 +49,8 @@ export default { mixins: [aosMixin] }
 
 .title {
   padding: 20px;
+  display: flex;
+  flex-flow: column;
 }
 
 .title h2 {
@@ -88,6 +90,34 @@ export default { mixins: [aosMixin] }
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper_events {
+    max-width: 900px;
+    margin: 100px auto;
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .wrapper_events_text {
+    width: 50%;
+  }
+  .wrapper_events_img {
+    width: 45%;
+  }
+  .title {
+    display: flex;
+    flex-flow: column;
+  }
+  .title p {
+    width: 350px;
+  }
+
+  .title h2 {
+    font-size: 52px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .wrapper_events {
     max-width: 900px;

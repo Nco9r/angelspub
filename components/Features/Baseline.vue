@@ -136,6 +136,24 @@ export default {
   font-weight: 900;
 }
 
+@media screen and (min-width: 768px) {
+  .baseline {
+    margin-top: -70px;
+  }
+
+  .wrapper_first p {
+    -webkit-text-stroke: 1px white;
+    font-family: RecoletaBold;
+    color: transparent;
+    font-size: 70px;
+    line-height: 65px;
+    text-transform: uppercase;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-weight: 900;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .baseline {
     margin-top: -100px;

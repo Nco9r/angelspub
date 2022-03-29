@@ -19,7 +19,7 @@
         data-aos-delay="40"
         data-aos-duration="700"
         data-aos-once="true"
-        href=""
+        href="tel:+33556663941"
         >Réserver</a
       >
     </div>
@@ -85,9 +85,26 @@ export default { mixins: [aosMixin] }
 
 @media screen and (min-width: 1024px) {
   .title h2 {
-  font-size: 42px;
+  font-size: 52px;
+
 
   font-family: RecoletaBlack;
+}
+.wrapper_resa {
+  /* background-image: url('~assets/img/png/resa.jpg'); */
+  height: 360px;
+  background-color: var(--red);
+  background-size: cover;
+  position: relative;
+  margin-top: -5px;
+}
+
+.title p {
+
+  width: 260px;
+  margin: 10px auto 40px auto;
+  font-size: 18px;
+  line-height: 32px;
 }
 }
 

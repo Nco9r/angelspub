@@ -18,7 +18,7 @@
           data-aos-duration="700"
           data-aos-once="true"
         >
-          Venez découvrir une sélection de plus de 60 Bières, 12 Becs pression
+          Venez découvrir à la Teste de Buch une sélection de plus de 60 Bières, 12 Becs pression
           Vins et Cocktails, dans une ambiance chaleureuse et décontractée.
           Profitez de notre happy hour de 18h à 19h30 !
         </p>
@@ -82,6 +82,15 @@ export default {
         prevButton: '#prev',
         nextButton: '#next',
         responsive: {
+           768: {
+            items: 3,
+            mouseDrag: true,
+            edgePadding: 0,
+            gutter: 30,
+            loop: true,
+            prevButton: '#prev',
+            nextButton: '#next',
+          },
           1024: {
             items: 3,
             mouseDrag: true,
@@ -116,6 +125,8 @@ export default {
 
 .title {
   padding: 20px;
+   display: flex;
+  flex-flow: column;
 }
 
 .title h2 {
@@ -199,6 +210,64 @@ export default {
   width: 40px;
   height: 40px;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper_afterwork_text {
+    text-align: center;
+    max-width: 700px;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .title {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .title img {
+    margin-top: 10px;
+  }
+  .box_img img {
+    width: 50%;
+  }
+  .tns-item {
+    width: 70%;
+  }
+
+  .img_second {
+    position: absolute;
+    z-index: 10;
+    bottom: -60px;
+    width: 180px;
+    left: -40px;
+  }
+
+  .title p {
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    width: 600px;
+  }
+
+  .title h2 {
+    font-family: RecoletaBlack;
+    color: white;
+    font-size: 52px;
+    margin-bottom: 30px;
+  }
+
+  .slide_tiny {
+    display: flex;
+    margin-top: 20px;
+    max-width: 900px;
+    margin: 20px auto -20px auto;
+    flex-flow: row;
+    justify-content: flex-end;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -354,6 +423,13 @@ export default {
     margin: 20px auto -20px auto;
     flex-flow: row;
     justify-content: flex-end;
+  }
+
+    .title h2 {
+    font-family: RecoletaBlack;
+    color: white;
+    font-size: 72px;
+    margin-bottom: 30px;
   }
 }
 </style>

@@ -55,6 +55,8 @@ export default { mixins: [aosMixin] }
 
 .title {
   padding: 20px;
+   display: flex;
+  flex-flow: column;
 }
 
 .title h2 {
@@ -117,6 +119,32 @@ export default { mixins: [aosMixin] }
 .wrapper_restaurant_img .box_img img {
   width: 100%;
   margin-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper_restaurant {
+    background-color: var(--yellow);
+    height: 800px;
+    margin-top: -200px;
+    padding-top: 300px;
+  }
+
+  .wrapper_box {
+    max-width: 900px;
+    display: flex;
+    padding-top: 200px;
+    margin: -200px auto 50px auto;
+  }
+
+  .title {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .title h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -197,7 +225,7 @@ export default { mixins: [aosMixin] }
 @media screen and (min-width: 1440px) {
   .wrapper_restaurant {
     background-color: var(--yellow);
-    height: 900px;
+    height: 1200px;
     margin-top: -200px;
     padding-top: 300px;
   }
@@ -219,8 +247,8 @@ export default { mixins: [aosMixin] }
   }
 
   .title h2 {
-    font-size: 52px;
-    line-height: 52px;
+    font-size: 72px;
+    line-height: 72px;
   }
 }
 </style>

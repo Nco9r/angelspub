@@ -117,4 +117,52 @@ export default {
     transform: translateY(100%);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: 400px;
+    z-index: 10;
+    margin-right: 70px;
+  }
+
+  .baseline_load {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+  }
+  .baseline_load p {
+    font-family: heart;
+    font-size: 42px;
+    margin-top: 80px;
+  }
+
+  .img_2 {
+    position: absolute;
+    top: -40px;
+    width: 110px;
+  }
+
+  .img_4 {
+    position: absolute;
+    top: -25px;
+    width: 100px;
+    right: -30px;
+  }
+
+  .img_3 {
+    position: absolute;
+    bottom: 0;
+    right: -40px;
+    width: 90px;
+  }
+
+  .img_1 {
+    position: absolute;
+    bottom: -20px;
+    left: -40px;
+    width: 110px;
+  }
+}
 </style>

@@ -42,27 +42,7 @@
         </div>
       </div>
     </div>
-    <div class="items_desktop">
-      <div class="items_desktop_left">
-        <p>
-          78 rue Lagrua, <br />
-          33260, <br />
-          La Teste de Buch.
-        </p>
-        <p>unebiere@angels-pub.fr</p>
-        <p>
-          Lun - Fermé <br />
-          Mar - Fermé <br />Mer - Dim / 18h - 00h<br />
-        </p>
-      </div>
-      <div class="items_desktop_right">
-        <div class="item hastag"><p>#unepinteourien</p></div>
-        <img src="~assets/img/svg/fb.svg" alt="" />
-        <a href="https://www.instagram.com/angelspub_/" target="_blank"
-          ><img src="~assets/img/svg/insta.svg" alt=""
-        /></a>
-      </div>
-    </div>
+
     <hr />
     <div class="copyright">
       © Angel's Pub 2022 - Tous droits réservés - Made by Nicolas ROUX.
@@ -100,17 +80,18 @@ hr {
 
 .items_left {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
+  align-items: flex-start;
+
 }
 
-.item {
-  width: 100% !important;
-  text-align: center;
-}
+
 
 .item {
   margin-top: 20px;
   margin-bottom: 20px;
+  margin: auto;
+  text-align: center;
 }
 
 .item h3 {
@@ -182,17 +163,14 @@ hr {
 
 .items_left {
   display: flex;
-  flex-flow: row wrap;
-  text-align: left;
-}
-
-.item {
-  width: 33%;
+  flex-flow: row wrap!important;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .items_right {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   align-items: left;
 }
 

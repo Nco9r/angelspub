@@ -107,6 +107,15 @@ export default {}
   fill: var(--black);
 }
 
+@media screen and (min-width: 768px) {
+  .box_header_mobile {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px 0;
+  }
+}
+
+
 @media screen and (min-width: 1024px) {
   .box_header_mobile {
     max-width: 900px;
