@@ -75,7 +75,7 @@ h5 {
 
 p {
   font-family: RobotoMono, 'Times New Roman', Times, serif;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 0.5px;
   color: var(--white);
 }
