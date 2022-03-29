@@ -1,8 +1,9 @@
+
 export default {
   buildDir: 'nuxt-dist',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Bar - Restaurant - Afterwork | Angel's PUB",
+    title: "Bar - Restaurant - Afterwork | La Teste de Buch",
     htmlAttrs: {
       lang: 'en'
     },
@@ -23,8 +24,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [{ src: '~/plugins/vue-tiny-slider.js', mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

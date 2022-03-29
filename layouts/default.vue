@@ -1,27 +1,29 @@
 <template>
   <div>
-  
-    <nuxt/>
+    <the-header />
+    <nuxt />
     <Noise />
+    <thefooter />
   </div>
 </template>
 
 <script>
 import Noise from '../components/Default/Noise'
-
+import TheHeader from '../components/Default/TheHeader.vue'
+import Thefooter from '../components/Features/Thefooter.vue'
 
 export default {
-  
   components: {
-    Noise
-  
+    Noise,
+    TheHeader,
+    Thefooter,
   },
   data() {
     return {}
   },
   mounted() {},
 
-  methods: {}
+  methods: {},
 }
 </script>
 
@@ -37,12 +39,14 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   background-color: var(--green);
-  color:var(--white);
+  color: var(--white);
+  overflow-x: hidden;
   cursor: url('~assets/img/svg/mouse-ap.svg'), auto;
-
 }
 
-
+body {
+  overflow-x: hidden;
+}
 
 *,
 *:before,
@@ -52,15 +56,19 @@ html {
 }
 
 :root {
-  --black: #1E2222;
-  --yellow: #BA832B;
-  --red: #602B2B;
-  --green: #07281F;
-  --white: #F8F2E7;
-  --input: rgba(247, 247, 247, 0.11);
+  --black: #1e2222;
+  --yellow: #c6861e;
+  --red: #602b2b;
+  --green: #07281f;
+  --white: #f8f2e7;
+  --input: rgba(247, 247, 247, 0.075);
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: RecoletaMedium, 'Times New Roman', Times, serif;
   font-weight: 200;
 }
@@ -68,11 +76,9 @@ h1, h2, h3, h4, h5 {
 p {
   font-family: RobotoMono, 'Times New Roman', Times, serif;
   font-weight: 300;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   color: var(--white);
 }
-
-
 
 @font-face {
   font-family: RecoletaBlack;
@@ -98,7 +104,4 @@ p {
   font-family: RobotoMono;
   src: url('~assets/fonts/RobotoMono.ttf');
 }
-
-
-
 </style>

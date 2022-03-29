@@ -1,102 +1,120 @@
 <template>
   <div>
-    <div class="open">
-      <div class="text">
-        <img src="~assets/img/svg/logo.svg" alt="">
+    <div class="loading">
+      <div class="baseline_load">
+        <div class="img">
+          <img class="img_2" src="~/assets/img/svg/corner.svg" alt="" />
+          <img class="img_1" src="~/assets/img/svg/gum.svg" alt="" />
+          <img class="img_3" src="~/assets/img/svg/eyes.svg" alt="" />
+          <img class="img_4" src="~/assets/img/svg/mouse-ap.svg" alt="" />
+          <img class="logo" src="~/assets/img/svg/logo.svg" alt="" />
+        </div>
+        <p>The place to beer !</p>
       </div>
     </div>
-    <div class="layout">
-      <logo />
+    <main>
       <hero />
-      <thefooter />
-    </div>
+      <afterwork />
+      <restaurant />
+      <baseline />
+      <events />
+      <resa />
+    </main>
   </div>
 </template>
 
 <script>
+import Afterwork from '../components/Features/Afterwork.vue'
+import Baseline from '../components/Features/Baseline.vue'
+import Events from '../components/Features/Events.vue'
 import Hero from '../components/Features/Hero.vue'
-import Logo from '../components/Features/Logo.vue'
-import Thefooter from '../components/Features/Thefooter.vue'
+import Resa from '../components/Features/Resa.vue'
+import Restaurant from '../components/Features/Restaurant.vue'
+import aosMixin from '~/mixins/aos'
 
 export default {
+  mixins: [aosMixin],
   components: {
     Hero,
-    Logo,
-    Thefooter,
+    Afterwork,
+    Restaurant,
+    Baseline,
+    Events,
+    Resa,
   },
 }
 </script>
 
 <style>
-.open {
+.loading {
   position: fixed;
   top: 0;
+  bottom: 0;
+  left: 0;
   background-color: var(--black);
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: 1000;
-  animation: open 0.5s linear;
-  animation-delay: 1.3s;
+  right: 0;
+  z-index: 20;
+  animation: load 0.7s ease-in-out;
   animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 
-@keyframes open {
-  from {
-    top: 0;
-  }
-  to {
-    top: -150%;
-  }
+.img {
+  position: relative;
 }
 
-.text {
+.logo {
+  width: 200px;
+  z-index: 10;
+}
+
+.img_2 {
+  position: absolute;
+  top: -40px;
+  width: 80px;
+}
+
+.img_4 {
+  position: absolute;
+  top: -25px;
+  width: 60px;
+  right: -30px;
+}
+
+.img_3 {
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  width: 50px;
+}
+
+.img_1 {
+  position: absolute;
+  bottom: -20px;
+  left: -40px;
+  width: 60px;
+}
+
+.baseline_load {
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
-  flex-flow: column;
-  height: 100vh;
+  padding-top: 200px;
 }
 
-.text  img{
-
-margin-left: -20px;
-
+.baseline_load p {
+  font-family: heart;
+  font-size: 32px;
+  margin-top: 80px;
 }
 
-.text p {
-  text-align: center;
-  font-family: RecoletaBold;
-  font-size: 25px;
-  color: var(--yellow);
-}
-
-
-@media screen and (min-width: 1024px) {
-  .layout {
-    max-width: 900px;
-    margin: 30px auto;
+@keyframes load {
+  from {
+    transform: translateY(0);
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .layout {
-    max-width: 1100px;
-    margin: 30px auto;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .layout {
-    max-width: 1400px;
-    margin: 30px auto;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .layout {
-    max-width: 1550px;
-    margin: 30px auto;
+  to {
+    transform: translateY(100%);
   }
 }
 </style>

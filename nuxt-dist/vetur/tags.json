@@ -2,11 +2,29 @@
   "DefaultNoise": {
     "description": "Auto imported from components/Default/Noise.vue"
   },
+  "DefaultTheHeader": {
+    "description": "Auto imported from components/Default/TheHeader.vue"
+  },
+  "FeaturesAfterwork": {
+    "description": "Auto imported from components/Features/Afterwork.vue"
+  },
+  "FeaturesBaseline": {
+    "description": "Auto imported from components/Features/Baseline.vue"
+  },
+  "FeaturesEvents": {
+    "description": "Auto imported from components/Features/Events.vue"
+  },
   "FeaturesHero": {
     "description": "Auto imported from components/Features/Hero.vue"
   },
   "FeaturesLogo": {
     "description": "Auto imported from components/Features/Logo.vue"
+  },
+  "FeaturesResa": {
+    "description": "Auto imported from components/Features/Resa.vue"
+  },
+  "FeaturesRestaurant": {
+    "description": "Auto imported from components/Features/Restaurant.vue"
   },
   "FeaturesThefooter": {
     "description": "Auto imported from components/Features/Thefooter.vue"

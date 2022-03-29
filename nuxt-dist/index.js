@@ -14,6 +14,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 import nuxt_plugin_plugin_1a081cb4 from 'nuxt_plugin_plugin_1a081cb4' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_axios_286ee5bc from 'nuxt_plugin_axios_286ee5bc' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_vuetinyslider_67155006 from 'nuxt_plugin_vuetinyslider_67155006' // Source: ../plugins/vue-tiny-slider.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -63,7 +64,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Bar - Restaurant - Afterwork | Angel's PUB","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Venez découvrir nos afterwork sur La Teste de Buch à l'ambiance irlandaise, profitez de notre bar et laissez vous tentez par notre restaurant. Chez Angel's Pub, voyagez sans vous déplacer !"},{"hid":"keywords","name":"keyworks","content":"bar, bar la teste de buch, restaurant, restaurant la teste de buch, afterwork, afterwork la teste de buch, la teste de buch, biere, beers, beer, cocktails, tapas, bar à tapas, terrasse, événements, concerts, concert, matchs, match"},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Bar - Restaurant - Afterwork | La Teste de Buch","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Venez découvrir nos afterwork sur La Teste de Buch à l'ambiance irlandaise, profitez de notre bar et laissez vous tentez par notre restaurant. Chez Angel's Pub, voyagez sans vous déplacer !"},{"hid":"keywords","name":"keyworks","content":"bar, bar la teste de buch, restaurant, restaurant la teste de buch, afterwork, afterwork la teste de buch, la teste de buch, biere, beers, beer, cocktails, tapas, bar à tapas, terrasse, événements, concerts, concert, matchs, match"},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -183,6 +184,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_axios_286ee5bc === 'function') {
     await nuxt_plugin_axios_286ee5bc(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vuetinyslider_67155006 === 'function') {
+    await nuxt_plugin_vuetinyslider_67155006(app.context, inject)
   }
 
   // Lock enablePreview in context
